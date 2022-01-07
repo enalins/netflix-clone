@@ -1,0 +1,139 @@
+.headerFixed {
+  width: 100%;
+  padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  transition: 0.28s ease-out;
+}
+  .headerFixed.scrolled {
+    background-color: var(--black);
+  }
+  .headerFixed .firstBlock {
+    display: flex;
+    flex-flow: row wrap;
+  }
+    .headerFixed .firstBlock .logo {
+      width: 100px;
+      margin-right: 2rem;
+    }
+.headerNav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: .75rem;
+  list-style: none;
+}
+.headerLink {
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+}
+  .headerLink.active {
+    font-weight: bold;
+  }
+  .headerLink:hover {
+    color: #eaeaea;
+    text-decoration: none;
+  }
+.invisibleBtn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .25rem .5rem;
+}
+  .invisibleBtn .MuiSvgIcon-root {
+    margin-top: .5rem;
+  }
+
+.userSelector {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: .25rem;
+  position: relative;
+  text-align: left;
+}
+  .userSelector .image {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 4px;
+  }
+  .userSelector .icon .MuiSvgIcon-root {
+    color: white;
+    transition: 0.1s ease-out;
+  }
+    .userSelector:hover .icon .MuiSvgIcon-root {
+      transform: rotate(180deg);
+    }
+  .userSelector .selector {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    display: none;
+    background: rgba(0,0,0,.75);
+    border: solid 1px #eaeaea;
+    padding: 1rem 0;
+  }
+    .userSelector .selector::after {
+      content: '';
+      position: absolute;
+      top: -9px;
+      right: 2rem;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+    }
+    .userSelector:hover .selector {
+      display: block;
+    }
+    .userSelector .selector .selectorOption {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      gap: .25rem;
+      margin-bottom: 0.5rem;
+    }
+    .userSelector .selector .headerLink, .userSelector .selector .selectorOption {
+      padding: 0 5rem 0 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .userSelector .selector .headerLink:hover {
+      text-decoration: underline;
+    }
+    .userSelector .selector hr {
+      margin: 1rem 0;
+      border-color: #eaeaea;
+      border-top: none;
+    }
+    .userSelector .selector .selectorOption .name {
+      color: #fff;
+      text-decoration: none;
+    }
+      .userSelector .selector .selectorOption:hover .name {
+        text-decoration: underline;
+      }
+    .userSelector .image, .userSelector .selector .selectorOption:nth-child(1) .image {
+      background: lightseagreen;
+    }
+    .userSelector .selector .selectorOption:nth-child(2) .image {
+      background: lightskyblue;
+    }
+    .userSelector .selector .selectorOption:nth-child(3) .image {
+      background: lightgoldenrodyellow;
+    }
+    .userSelector .selector .selectorOption:nth-child(4) .image {
+      background: lightpink;
+    }

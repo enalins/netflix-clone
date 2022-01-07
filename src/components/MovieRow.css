@@ -1,0 +1,74 @@
+.listTitle{
+  margin: 0 0 .5rem 4rem;
+}
+.listContainer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 3rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+    .listItem {
+      transform: scale(0.9);
+      transition: 0.28s ease-out;
+      position: relative;
+      border-radius: .25rem;
+      height: 220px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+      .listItem:hover {
+        transform: scale(1);
+      }
+      .listItem img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+  .listContainer .styles-module_carousel-arrow__26sRw {
+    position: absolute;
+    top: 0;
+    border: none;
+    height: 100%;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.28s ease-out;
+    cursor: pointer;
+    color: white;
+    font-size: 3rem;
+  }
+    .listContainer > div > div:first-child .styles-module_carousel-arrow__26sRw {
+      left: 0;
+      background: linear-gradient(to right, var(--black), rgba(20,20,20,.25));
+    }
+      .listContainer > div > div:first-child .styles-module_carousel-arrow__26sRw::after {
+        content: '\2039';
+        display: block;
+      }
+      .listContainer > div > div:first-child .styles-module_carousel-arrow__26sRw:hover {
+        background: linear-gradient(to right, var(--black), rgba(20,20,20,.45));
+      }
+    .listContainer > div > div:last-child .styles-module_carousel-arrow__26sRw {
+      right: 0;
+      background: linear-gradient(to right, rgba(20,20,20,.25), var(--black));
+    }
+      .listContainer > div > div:last-child .styles-module_carousel-arrow__26sRw::after {
+        content: '\203A';
+        display: block;
+      }
+      .listContainer > div > div:last-child .styles-module_carousel-arrow__26sRw:hover {
+        background: linear-gradient(to right, rgba(20,20,20,.45), var(--black));
+      }
+      
+    .listContainer:hover .styles-module_carousel-arrow__26sRw {
+      opacity: 1;
+    }
+    .listContainer .styles-module_item-provider__YgMwz {
+      overflow: visible;
+    }
