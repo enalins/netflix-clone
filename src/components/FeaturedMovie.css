@@ -1,0 +1,113 @@
+.featured {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+  .featured__overlayOne {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(20, 20, 20, 0.5), transparent);
+    z-index: -1;
+  }
+  .featured__type {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 4rem;
+  }
+    .featured__type__icon {
+      height: 3rem;
+    }
+    .featured__type__text {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: .25rem;
+      color: #eaeaea;
+      height: max-content;
+    }
+  .featured__title {
+    font-size: 6rem;
+    max-width: 12ch;
+    margin-left: 4rem;
+  }
+  .featured__desc {
+    font-size: 1.5rem;
+    max-width: 38ch;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+
+    overflow: hidden;
+    line-height: 2rem;
+    max-height: 6rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+  }
+  .featured__action {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 4rem;
+    gap: 1rem;
+  }
+    .featured__action__watch {
+      background-color: white;
+      color: #111;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 0.25rem;
+      padding: 0 1.5rem 0 0.75rem;
+      display: flex;
+      flex-flow: row nowrap;
+      place-items: center;
+      font-weight: 600;
+      cursor: pointer;
+    }
+      .featured__action__watch:hover {
+        background-color: rgba(255,255,255,0.7);
+      }
+      .featured__action__watch .MuiSvgIcon-root {
+        font-size: 3rem;
+      }
+    .featured__action__moreInfo {
+      background-color: rgba(255,255,255,0.3);
+      color: white;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 0.25rem;
+      padding: 0 1.5rem 0 0.75rem;
+      display: flex;
+      flex-flow: row nowrap;
+      place-items: center;
+      font-weight: 600;
+      cursor: pointer;
+    }
+      .featured__action__moreInfo:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+      .featured__action__moreInfo .MuiSvgIcon-root {
+        font-size: 2.5rem;
+      }
+  .featured__overlayTwo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background: linear-gradient(to bottom, transparent, var(--black));
+  }

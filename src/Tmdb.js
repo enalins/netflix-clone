@@ -53,6 +53,14 @@ var getInfo = {
         items: await basicFetch(`/discover/movie?with_genres=99&${basicSetUp}`)
       }
     ]
+  },
+  getMovieInfo: async (movieId, type) => {
+    let info = {};
+
+    if(movieId){
+      info = await basicFetch(`/${type}/${movieId}?${basicSetUp}`);
+      return info;
+    }
   }
 }
 
