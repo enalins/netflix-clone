@@ -9,6 +9,7 @@
   flex-flow: row wrap;
   justify-content: space-between;
   transition: 0.28s ease-out;
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.5), transparent);
 }
   .headerFixed.scrolled {
     background-color: var(--black);
