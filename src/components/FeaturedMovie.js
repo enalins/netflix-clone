@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './FeaturedMovie.css';
 import logo from '../assets/images/favicon.png';
 import {PlayArrowRounded, InfoOutlined} from '@material-ui/icons';
@@ -21,10 +22,10 @@ const FeaturedMovie = ({item}) => {
         {item.overview}
       </p>
       <div className="featured__action">
-        <button className="featured__action__watch">
+        <Link to="/watch" className="featured__action__watch">
           <PlayArrowRounded />
           Assistir
-        </button>
+        </Link>
         <button className="featured__action__moreInfo">
           <InfoOutlined />
           Mais Informações

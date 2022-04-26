@@ -1,0 +1,8 @@
+body > #root {
+  height: 100vh;
+  overflow: hidden;
+}
+.videoPlayer__video {
+  width: 100%;
+  height: 100%;
+}
